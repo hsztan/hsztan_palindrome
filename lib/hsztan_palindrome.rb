@@ -6,10 +6,6 @@ class String
     processed_content == processed_content.reverse
   end
 
-  def letters
-    self.scan(/[a-zA-Z]/).join
-  end
-
   private
 
     def processed_content
