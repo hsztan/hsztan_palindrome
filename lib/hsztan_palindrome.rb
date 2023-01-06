@@ -1,6 +1,6 @@
 require "hsztan_palindrome/version"
 
-class String
+module HsztanPalindrome
 
   def palindrome?
     processed_content == processed_content.reverse
@@ -9,6 +9,14 @@ class String
   private
 
     def processed_content
-      self.scan(/[a-z]/i).join.downcase
+      self.to_s.scan(/[a-z\d]/i).join.downcase
     end
+end
+
+class String
+  include HsztanPalindrome
+end
+
+class Integer
+  include HsztanPalindrome
 end

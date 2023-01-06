@@ -17,4 +17,12 @@ class HsztanPalindromeTest < Minitest::Test
   def test_palindrome_with_punctuation
     assert "Madam, I'm Adam.".palindrome?
   end
+
+  def test_non_palindrome_integer
+    refute 12345.palindrome?
+  end
+
+  def test_palindrome_integer
+    assert 12321.palindrome?
+  end
 end
