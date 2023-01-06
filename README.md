@@ -1,8 +1,8 @@
 # HsztanPalindrome
 
-Welcome to your new gem! In this directory, you'll find the files you need to be able to package up your Ruby library into a gem. Put your Ruby code in the file `lib/hsztan_palindrome`. To experiment with that code, run `bin/console` for an interactive prompt.
+To experiment with that code, run `bin/console` for an interactive prompt.
 
-This gem is a palindrome detector for strings. It can be used as a library or as a command line tool.
+This gem is a palindrome detector for strings and integers. It can be used as a library or as a command line tool.
 
 ## Installation
 
@@ -22,9 +22,23 @@ Or install it yourself as:
 
 ## Usage
 
-TODO: Use as a library:
+Use as a library:
 
-```ruby
+```
+
+require 'hsztan_palindrome'
+```
+
+```
+"foo".palindrome? # => false
+
+"racecar".palindrome? # => true
+
+12345.palindrome? # => false
+
+12321.palindrome? # => true
+
+```
 
 ## Development
 
