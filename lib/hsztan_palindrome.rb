@@ -9,6 +9,6 @@ class String
   private
 
     def processed_content
-      self.scan(/[a-z]/i).join.downcase
+      self.scan(/[a-z]/i).join&.downcase
     end
 end
