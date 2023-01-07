@@ -6,8 +6,8 @@ Gem::Specification.new do |spec|
   spec.authors       = ["Henry Nawrocki"]
   spec.email         = ["henry@sztanski.com"]
 
-  spec.summary       = %q{Palindrome detector.}
-  spec.description   = %q{Learn Enough Ruby palindrome detector.}
+  spec.summary       = %q{Palindrome detector}
+  spec.description   = %q{Palindrome detector for strings, integers, and arrays.}
   spec.homepage      = "https://github.com/hsztan/hsztan_palindrome"
   spec.required_ruby_version = Gem::Requirement.new(">= 2.3.0")
 
