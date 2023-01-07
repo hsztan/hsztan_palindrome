@@ -38,6 +38,22 @@ require 'hsztan_palindrome'
 
 12321.palindrome? # => true
 
+[
+[1, 2, 3],
+[2, 3, 2],
+[3, 2, 1]
+].palindrome? # => true
+
+[
+[2, 3, 4],
+[2, 3, 2],
+[3, 2, 1]
+].palindrome? # => false
+
+[1, 2, 3, 4, 5].palindrome? # => false
+
+```
+
 ```
 
 ## Development
